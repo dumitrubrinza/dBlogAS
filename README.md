@@ -1,16 +1,15 @@
-<h3>Git link </h3> <a href="https://github.com/dumitrubrinza/dBlogApp.git">dBlogApp</a>
+<h3>Git link <a href="https://github.com/dumitrubrinza/dBlogAppMean.git">dBlogApp</a></h3> 
 <br>
-<p>As you notice there is `bower.json` file that contains all dependencies that can be installed by <b>`bower install`</b> command, however I deploied the app with dependencies allready installed (see <b> `dBlogApp/bower_components`</b>) </p>
-<p><h4>!! No need to install dependencies !!</h4></p>
-<p>The app itself represent a Blog App, that require further development (at this stage the app is at the development stage)</p>
-<p>There is no server side (backend) of the application yet</p>
+<p>Runing app in HEROKU link ---> <a href="safe-sands-20956.herokuapp.com" >safe-sands-20956.herokuapp.com</a></p>
+
 ***
-<h5>To run the app localy run the <b> `http-server` </b> command</h5>
-<p>Even though the app contains user authentication throught the Cookies that store the Base64 encoded username and the password, and this are hold even after the browser refresh </p>
-***
-<p>User service contains already some users information that can be used for logging in</p>
+<p> logging in for demo with</p>
 ```javascript
 1.                       2.                   3. 
-username: Homer          username: Bart       username: Marge
-password: secret         password: secret     password: secret
+email :  homer@simpson.com
+password: secret     
 ```
+***
+<p>or </p>
+<br>
+<h3>Sign UP</h3>
