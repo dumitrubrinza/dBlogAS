@@ -1,5 +1,5 @@
 
-var blogApp = angular.module('dBlogApp', ['ngRoute', 'ngMessages', 'angularUtils.directives.dirPagination', 'ngCookies', 'UserApp' ]);
+var blogApp = angular.module('dBlogApp', ['ngRoute', 'ngMessages', 'angularUtils.directives.dirPagination', 'ngCookies', 'UserApp', 'ngAnimate', 'ui.bootstrap', 'textAngular' ]);
 
     blogApp.config(['$routeProvider',
       function($routeProvider) {
@@ -136,7 +136,7 @@ var compareTo = function() {
  
  
 //  ArticleDetailController
-  blogApp.controller('ArticleDetailController', ['$scope', '$location', '$routeParams', 'ArticleService',  'user',
+  blogApp.controller('ArticleDetailController', ['$scope', '$location', '$routeParams', 'ArticleService',  'user', 
           
            function($scope, $location, $routeParams, ArticleService, user) {
              ArticleService.getArticle($routeParams.id)
@@ -144,8 +144,38 @@ var compareTo = function() {
                 $scope.article = post;
              });
              var currentUser = user.current;
-          
-              console.log(currentUser.first_name);
+
+          $scope.addComment = function(){
+            if($scope.comment.body === '') { return; }
+            var comment = {
+                body: $scope.comment.body,
+                author: currentUser.first_name,
+                createdAt: new Date(),
+                picture: currentUser.picture
+            }
+            ArticleService.addArticleComment($scope.article._id, comment )
+                .success(function(added_comment) {
+                    $scope.article.comments.push(added_comment)
+                    $scope.comment = {} ;   
+                })
+          }
+           $scope.incrementUpvotes = function(comment) {
+               ArticleService.upvotePostComment($scope.article._id, comment._id , 
+                        comment.upvotes + 1 )
+                  .success(function(updated_comment) {
+                      comment.upvotes = updated_comment.upvotes
+                  })
+            }
+            $scope.derementDownvotes = function(comment) {
+               ArticleService.downvotePostComment($scope.article._id, comment._id , 
+                        comment.downvotes - 1 )
+                  .success(function(updated_comment) {
+                      comment.downvotes = updated_comment.downvotes
+                  })
+            }
+           
+          console.log(currentUser.first_name);
+             
            console.log(user.status().authenticated);
   }])
 
@@ -162,7 +192,7 @@ blogApp.controller('NewArtController', ['$scope', '$rootScope', '$location','Art
                 var currentUser = user.current;
                 var article = { 
                               title: $scope.newPost.title,
-                              data: $scope.newPost.text,
+                              data: $scope.htmlVariable, // newPost.text
                               createdAt: new Date(),
                               by: currentUser.first_name
                               }
@@ -192,6 +222,19 @@ blogApp.factory('ArticleService',  ['$http', function($http){
              },
              addArticle : function(article){
                 return $http.post('/api/posts',article)
+             },
+             addArticleComment : function(id, comment){
+                 return $http.post('/api/posts/' + id + '/comments' , comment)
+             },
+             upvotePostComment : function(article_id, comment_id, new_upvote_count ) {
+                  return $http.post( '/api/posts/' +
+                              article_id + '/comments/' +  comment_id + '/upvotes', 
+                             {upvotes: new_upvote_count })
+             },
+             downvotePostComment : function(article_id, comment_id, new_upvote_count ) {
+                  return $http.post( '/api/posts/' +
+                              article_id + '/comments/' +  comment_id + '/downvotes', 
+                             {downvotes: new_upvote_count })
              }
           }
           return api
