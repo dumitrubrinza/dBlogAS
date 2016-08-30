@@ -14,9 +14,9 @@ password: secret
 <br>
 <h3>Sign UP</h3>
 
-#Assignment 1 - AngularJS app.
+#Assignment 2 - MEAN app.
 
-Name: ... your name ...
+Name: **Dumitru Brinza**
 
 ###Overview.
 ...... A statement of the app concept and objectives (about 1/2 page) ........
@@ -31,10 +31,22 @@ Name: ... your name ...
  + etc
 
 ###Installation requirements.
-. . . .  List of software used to develop the app . . . . . . . 
-+ AngularJS 1.x
-+ Bootstrap 3
-+ etc
+. . . .  List of software used to develop the app . . . . . . .
+
+Server side
+'''
+"dependencies": {
+        "express": "~4.0.0",
+        "debug": "~0.7.4",
+        "morgan": "~1.0.0",
+        "body-parser": "~1.0.0",
+        "mongoose": "~3.8.8",
+        "errorhandler": "~1.0.0",
+        "lodash": "~2.4.1",
+        "cookie-parser": "~1.0.1"
+     }
+''' 
+ 
 + etc 
 
 
