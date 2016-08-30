@@ -34,7 +34,8 @@ Name: **Dumitru Brinza**
 . . . .  List of software used to develop the app . . . . . . .
 
 Server side
-'''
+
+```
 "dependencies": {
         "express": "~4.0.0",
         "debug": "~0.7.4",
@@ -45,7 +46,7 @@ Server side
         "lodash": "~2.4.1",
         "cookie-parser": "~1.0.1"
      }
-''' 
+``` 
  
 + etc 
 
