@@ -69,7 +69,7 @@ Name: **Dumitru Brinza**
 
 ###Data Model Design.
 
-Diagram of app's data model (see example below) AND/OR a sample of the test data used (JSON or equivalent).
+Diagram of app's data model.
 
 ![][image1]
 
@@ -79,13 +79,15 @@ Use meaningful sample data. Briefly explain any non-trivial issues.
 
 A simple diagram showing the app's component design, in particular controllers and services (see example below).
 
-![][image2]
+![][image]
 
 ###UI Design.
 
-. . . . . Screenshots of app's views (see example below) with appropriate captions (excluding user regeneration and login views) . . . . . . . 
-
-![][image3]
+. . . . . Screenshots of app's views with appropriate captions . . . . . . . 
+Login View
+![][image4]
+Main View
+![][image2]
 
 ###Routing.
 
@@ -115,6 +117,7 @@ Describe your web API.
 
 . . . . . State the non-standard aspects of Angular (or other related technologies) that you researched and applied in this assignment . . . . .  
 
-[image1]: ./model.png
+[image1]: ./RMFolder/model.png
 [image2]: ./RMFolder/style.png
 [image3]: ./screen.png
+[image4]: ./RMFolder/login.png
