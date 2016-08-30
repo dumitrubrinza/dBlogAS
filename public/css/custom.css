@@ -22,20 +22,6 @@ a.navbar-brand {
     background-color: #2d2d2d;
 }
 
-#footer {
-  
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  
-  height: 60px;
-  background-color: #2d2d2d;
-  #margin-top:50px;
-  #padding-top:20px;
-  #padding-bottom:20px;
- }
-
-
 .text-muted {
   margin-top:20px;
 	color: #C1C0C0; 
@@ -104,14 +90,9 @@ ul.list{
    }
 .bubble-content {
    position:relative;
-   #float:left;
-   #margin-left:12px;
-   #width:650px;
     padding-top: 15px;
-    #padding-right: 19px;
     padding-bottom: 10px;
     padding-left: 10px;
-   #padding:0px 20px;
    border-radius:10px;
    background-color: #f2f2f2;
    box-shadow:1px 1px 5px rgba(0,0,0,.2);
@@ -119,8 +100,7 @@ ul.list{
    }
 .bubble-list {
     background-color:#f0f0ee;
-    font:1em "Trebuchet MS";
-    
+    font:1em "Trebuchet MS";  
   }
 
 .like {
@@ -141,9 +121,6 @@ ul.list{
     #width: 12.66666667%;
     margin-right: -30px
 }
-.bubble {
-     #margin-top:20px;
-     }
 
 .stayright {
     margin-top:20px;
@@ -166,10 +143,6 @@ ul.list{
     color: red;
     float:right;
     font-size: 250%;
-}
-
-table {
-  #border: dotted;
 }
 
 .vali{
@@ -217,10 +190,6 @@ table {
     padding-bottom: 25px;
 }      
 
-.comment-name{
-   #float: left;
-}
-
 .comment-date{
    #text-align: right;
    float: right;
@@ -229,5 +198,4 @@ table {
 .comment-rating{
    float: right;
    margin-right: 15px;
-   #color: red;
 }
