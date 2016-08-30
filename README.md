@@ -62,13 +62,13 @@ Name: **Dumitru Brinza**
     "angular-utils-pagination": "0.11.0",
     "bootstrap-social": "^5.0.0"
   }
+  
+ also
+
+ textAngular (rangy, sanitize)
+ font-awesome
+ angular-animate
  ```
-    also
-    ```
-    textAngular (rangy, sanitize)
-    font-awesome
-    angular-animate
-    ```
 
 . . . . . . Also, explain (to a third party) what steps one must take to run your app after cloning it from the repository, e.g. any non-standard software installation ; any environment setup; how to start app; where to view app in browser . . . . . . . 
 
