@@ -16,25 +16,25 @@
            <div class="form-group">
               <label>First Name</label>
               <input type="text" name="first_name" class="form-control" ng-model="firstname" required ng-minlength="3">
-             <div ng-messages="registrationForm.firstname.$error"><div ng-messages-include="my-custom-messages"></div></div>
+             <div ng-messages="registrationForm.first_name.$error"><div ng-messages-include="my-custom-messages"></div></div>
           </div>
         </div>
          <div class="col-md-6">
         <div class="form-group">
             <label>Last Name</label>
             <input type="text" name="last_name" class="form-control" ng-model="lastname" required ng-minlength="3">
-           <div ng-messages="registrationForm.lastname.$error"><div ng-messages-include="my-custom-messages"></div></div>
+           <div ng-messages="registrationForm.last_name.$error"><div ng-messages-include="my-custom-messages"></div></div>
         </div>
       </div>
        <div class="form-group">
             <label>User Name</label>
-            <input type="text" name="user_name" class="form-control" ng-model="username" required ng-minlength="3" ng-maxlength="8"/>
-            <div ng-messages="registrationForm.username.$error"><div ng-messages-include="my-custom-messages"></div></div>
+            <input type="text" name="user_name" class="form-control" ng-model="username" required ng-minlength="3" ng-maxlength="10"/>
+            <div ng-messages="registrationForm.user_name.$error"><div ng-messages-include="my-custom-messages"></div></div>
         </div>
         <div class="form-group">
             <label>Email</label>
             <input type="email" name="login" ua-is-email class="form-control" ng-model="email" required ng-minlength="3">
-            <div ng-messages="registrationForm.email.$error"><div ng-messages-include="my-custom-messages"></div></div>
+            <div ng-messages="registrationForm.login.$error"><div ng-messages-include="my-custom-messages"></div></div>
 
         </div>
         <div class="form-group">

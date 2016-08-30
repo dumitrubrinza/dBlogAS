@@ -12,7 +12,10 @@
           <tr>
           <td>
             <blockquote>
-             <p> &nbsp;&nbsp;&nbsp; {{article.data | cut:true:350: ' ... '}} <a href="#/article/{{article._id}}"> (see more)</a> </p> </blockquote>
+              
+               <p> <div ng-bind-html="article.data | cut:true:400: ' ... '  | toTrusted "></div> <a href="#/article/{{article._id}}"> (see more)</a> </p> 
+
+            </blockquote>
           </td>
        </tr>
        <tr>

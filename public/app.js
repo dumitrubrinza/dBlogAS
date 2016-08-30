@@ -1,5 +1,5 @@
 
-var blogApp = angular.module('dBlogApp', ['ngRoute', 'ngMessages', 'angularUtils.directives.dirPagination', 'ngCookies', 'UserApp', 'ngAnimate', 'ui.bootstrap', 'textAngular' ]);
+var blogApp = angular.module('dBlogApp', ['ngRoute', 'ngMessages', 'angularUtils.directives.dirPagination', 'ngCookies', 'UserApp', 'ngAnimate', 'ui.bootstrap', 'textAngular', 'ngSanitize' ]);
 
     blogApp.config(['$routeProvider',
       function($routeProvider) {
@@ -70,6 +70,12 @@ blogApp.run(['user', '$rootScope', '$location', '$http',
 
 // */
  
+blogApp.filter('toTrusted', function ($sce) {
+  return function (value) {
+        return $sce.trustAsHtml(value);
+  };
+});
+
 // Cut filter
 blogApp.filter('cut', function(ArticleService) {
      return function (value, wordwise, max, tail) {

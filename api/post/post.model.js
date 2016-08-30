@@ -14,9 +14,7 @@ var EventSchema = new Schema({
     data: { type: String, required: true },
     createdAt: { type: Date, required: true },
     by: { type: String, required: true },
-    comments: [CommentSchema],
-    upvotes: Number,
-    downvotes: Number
+    comments: [CommentSchema] 
 });
 
 module.exports = mongoose.model('posts', EventSchema);
