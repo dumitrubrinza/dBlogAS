@@ -63,7 +63,12 @@ Name: **Dumitru Brinza**
     "bootstrap-social": "^5.0.0"
   }
  ```
-
+    also
+    ```
+    textAngular (rangy, sanitize)
+    font-awesome
+    angular-animate
+    ```
 
 . . . . . . Also, explain (to a third party) what steps one must take to run your app after cloning it from the repository, e.g. any non-standard software installation ; any environment setup; how to start app; where to view app in browser . . . . . . . 
 
@@ -83,7 +88,7 @@ A simple diagram showing the app's component design, in particular controllers a
 
 ###UI Design.
 
-. . . . . Screenshots of app's views with appropriate captions . . . . . . . 
+. . . . . Screenshots of app's views with appropriate captions   . . . . . . . 
 Login View
 ![][image4]
 Main View
