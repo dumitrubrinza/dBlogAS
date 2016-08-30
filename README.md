@@ -33,7 +33,7 @@ Name: **Dumitru Brinza**
 ###Installation requirements.
 . . . .  List of software used to develop the app . . . . . . .
 
-Server side
+**Server side**
 
 ```
 "dependencies": {
@@ -47,8 +47,22 @@ Server side
         "cookie-parser": "~1.0.1"
      }
 ``` 
- 
-+ etc 
+ **Client side**
+
+ ```
+"dependencies": {
+    "angular": "1.4.x",
+    "angular-mocks": "1.4.x",
+    "jquery": "~2.1.1",
+    "bootstrap": "3.3.6",
+    "angular-route": "1.4.x",
+    "angular-resource": "1.4.x",
+    "angular-messages": "1.4.x",
+    "angular-cookies": "1.4.x",
+    "angular-utils-pagination": "0.11.0",
+    "bootstrap-social": "^5.0.0"
+  }
+ ```
 
 
 . . . . . . Also, explain (to a third party) what steps one must take to run your app after cloning it from the repository, e.g. any non-standard software installation ; any environment setup; how to start app; where to view app in browser . . . . . . . 
@@ -102,5 +116,5 @@ Describe your web API.
 . . . . . State the non-standard aspects of Angular (or other related technologies) that you researched and applied in this assignment . . . . .  
 
 [image1]: ./model.png
-[image2]: ./design.png
+[image2]: ./RMFolder/style.png
 [image3]: ./screen.png
