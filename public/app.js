@@ -198,7 +198,7 @@ blogApp.controller('NewArtController', ['$scope', '$rootScope', '$location','Art
                 var currentUser = user.current;
                 var article = { 
                               title: $scope.newPost.title,
-                              data: $scope.htmlVariable, // newPost.text
+                              data: $scope.htmlVariable,  
                               createdAt: new Date(),
                               by: currentUser.first_name
                               }
