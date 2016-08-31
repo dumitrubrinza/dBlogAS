@@ -1,18 +1,13 @@
-<h3>Git link <a href="https://github.com/dumitrubrinza/dBlogAppMean.git">dBlogApp</a></h3> 
-<br>
+<h3>GitHub link <a href="https://github.com/dumitrubrinza/dBlogAS">dBlogApp</a></h3> 
+
 <p>Runing app in HEROKU link ---> <a href="http://safe-sands-20956.herokuapp.com" >http://safe-sands-20956.herokuapp.com</a></p>
 
-***
-<p> logging in for demo with</p>
-```javascript
-1.                       2.                   3. 
+##Demo Authentication 
+```javascript                       
 email :  homer@simpson.com
 password: secret     
 ```
 ***
-<p>or </p>
-<br>
-<h3>Sign UP</h3>
 
 #Assignment 2 - MEAN app.
 
@@ -101,20 +96,20 @@ Describe your web API.
 
 ###Extra features
 
-Third party User Authentication - UserApp 
-Pagination
-textAngular
-... 
++ Third party User Authentication - UserApp 
++ Pagination
++ textAngular
++ ... 
 
 ###Independent learning.
 
 . . . . . State the non-standard aspects of Angular (or other related technologies) that you researched and applied in this assignment . . . . . 
- 
+
 + Third party User Authentication
 + Pagination
 + textAngular
 + ng-bind-html="article.data | cut:true:400: ' ... '  | toTrusted "
-+ $sce.trustAsHtml(value)
++ $sce.trustAsHtml(value) - filter
 
 [image1]: ./RMFolder/model.png
 [image2]: ./RMFolder/style.png
